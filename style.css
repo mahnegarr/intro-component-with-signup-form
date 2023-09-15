@@ -1,0 +1,151 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap");
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+:root {
+  --Red: hsl(0, 100%, 74%);
+  --Green: hsl(154, 59%, 51%);
+  --Blue: hsl(248, 32%, 49%);
+  --Dark-Blue: hsl(249, 10%, 26%);
+  --Grayish-Blue: hsl(246, 25%, 77%);
+}
+
+body {
+  font-family: "poppins";
+  font-size: 16px;
+  height: 100vh;
+  width: 100%;
+  background-image: url(./images/bg-intro-desktop.png);
+  background-color: var(--Red);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+h1,
+.left-side p {
+  color: #fff;
+}
+
+.left-side {
+  width: 30%;
+  margin-right: 4rem;
+}
+h1 {
+  line-height: 2.2rem;
+  margin-bottom: 1.5rem;
+}
+.left-side p {
+  font-size: 11px;
+}
+.right-side {
+  width: 30%;
+}
+
+form {
+  background-color: #fff;
+  border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+  padding: 1rem 1.5rem;
+  box-shadow: 0 5px 2px rgba(0, 0, 0, 0.2);
+  /* height: 360px; */
+}
+
+.free-btn {
+  width: 100%;
+  padding: 0.8rem 0;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+  box-shadow: 0 5px 2px rgba(0, 0, 0, 0.2);
+  color: #fff;
+  background-color: var(--Blue);
+  font-family: "poppins";
+  font-weight: 600;
+  font-size: 12px;
+  margin-bottom: 1rem;
+}
+.free-btn span {
+  font-weight: 100;
+  color: #ffffffd6;
+}
+.input-container{
+    margin-bottom: 1rem;
+    height: 40px;
+    margin-bottom: 1.5rem;
+
+}
+input {
+  width: 100%;
+  border: 1px solid var(--Grayish-Blue);
+  border-radius: 3px;
+  padding: 0.5rem;
+  /* margin-bottom: 0.7rem; */
+  /* margin-top: -.8rem; */
+}
+
+input::placeholder {
+  font-size: 10px;
+  padding-left: 15px;
+  font-weight: 700;
+}
+
+input:focus {
+  outline: 1px solid black;
+  padding-left: 20px;
+}
+.error {
+  margin-top: 0.4rem;
+  /* margin-bottom: .3rem; */
+  font-size: 8px;
+  font-weight: 500;
+  text-align: right;
+  color: var(--Red);
+}
+
+img {
+  width: 1rem;
+  height: 1rem;
+  position: relative;
+  top: 25px;
+  left: 90%;
+}
+
+.claim-btn {
+
+  border: none;
+  border-radius: 3px;
+  color: #fff;
+  background-color: var(--Green);
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  font-size: 10px;
+  font-weight: bold;
+  padding: 0.8rem 0;
+  box-shadow: 0 2px 3px hsl(154, 61%, 37%);
+  margin-top: 1rem;
+  margin-bottom: 0.8rem;
+  cursor: pointer;
+}
+
+.claim-btn:hover {
+  opacity: 0.5;
+}
+
+form p {
+  font-size: 8px;
+  text-align: center;
+  color: var(--Grayish-Blue);
+  font-weight: 500;
+  margin-bottom: .5rem;
+}
+
+form p span {
+  color: var(--Red);
+  font-weight: 700;
+}
